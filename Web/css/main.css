@@ -163,7 +163,8 @@ nav > a:hover{
     
     padding-top: 60px;
     padding-bottom: 60px;
-    background-color: #ffdcb4;
+    /*background-color: #ffdcb4;*/
+    background-color: #fff;
 }
 
 .about > h2 {
@@ -211,7 +212,8 @@ nav > a:hover{
 .im > h2 {
     font-size: 42px;
     text-transform: uppercase;
-    color: #6a097d;
+    /*color: #6a097d;*/
+    color: #fff;
 }
 
 
@@ -335,12 +337,13 @@ nav > a:hover{
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    background-color: #6a097d;
 }
 
 
 .block-work > h2 {
     font-size: 48px;
-    color: #000;
+    color: #c060a1;
     font-weight: 600;
     text-transform:uppercase;
     margin-bottom: 30px;
@@ -401,6 +404,14 @@ nav > a:hover{
 }
 
 
+.work-item-3 {
+    background-image: url(../img/fon-card-game.jpg);
+    background-position: center;
+    background-size: cover;
+    background-repeat:no-repeat;
+}
+
+
 footer{
     width: 100%;
     height: 60px;
@@ -409,14 +420,14 @@ footer{
     flex-direction: row;
     justify-content: flex-end;
     align-items: center;
-    background-color: #000; 
+    background-color: #c060a1; 
 
     padding: 10px; 
 }
 
 
 footer > p{
-   color: #fff;
+   color: #ffdcb4;
    font-size: 18px;
 } 
 
@@ -582,6 +593,7 @@ footer > p{
 
     background-color: red;
     transition: all 0,4s;
+    background-color: #ffdcb4;
 }
 
 
@@ -593,6 +605,7 @@ footer > p{
 
  h1 {
      margin: 30px;
+     color: #c060a1;
 } 
 
 .g-1 {
@@ -891,5 +904,194 @@ footer > p{
 
     .box-work {
         flex-direction: column;
+    }
+}
+
+
+/*------------ game ------------*/
+
+.game-fon {
+    width: 100%;
+    height: 60%;
+
+    background-image: url(../img/fonGame.jpg);
+    background-position: left;
+    background-size: 110%;
+    background-repeat: repeat;
+
+    position: fixed;
+
+    animation: fon 10s linear 0s infinite;
+    animation-direction: alternate;
+}
+
+
+.game-rool {
+    width: 100%;
+    height: 20%;
+
+    background-color: #000;
+    position: fixed;
+    top: 60%;
+}
+
+
+.game-rool > span {
+    width: 120px;
+    height: 16px;
+    background-color: #fff;
+
+    position: absolute;
+    top: 42%;
+    right: -120px;
+}
+
+
+.ri-1 {
+    animation: ri 8s linear 0s infinite;
+}
+
+
+.ri-2 {
+    animation: ri 8s linear 2s infinite;
+}
+
+
+.ri-3 {
+    animation: ri 8s linear 4s infinite;
+}
+
+
+.ri-4 {
+    animation: ri 8s linear 6s infinite;
+}
+
+
+.game-grass {
+    width: 100%;
+    height: 20%;
+
+    background-color: #1e9f00;
+    position: fixed;
+    top: 80%;
+}
+
+
+.orig {
+    width: 140px;
+    position: absolute;
+    bottom: 5%;
+    right: -140px;
+    z-index: 1; 
+}
+
+.orig-1 {
+    animation: ri 8s linear 1s infinite;
+}
+
+
+.orig-2 {
+    bottom: 50%;
+    animation: ri 8s linear 3s infinite;
+}
+
+
+.orig-3 {
+    animation: ri 8s linear 5s infinite;
+}
+
+
+.orig-4 {
+    bottom: 50%;
+    animation: ri 8s linear 7s infinite;
+}
+
+
+.bird {
+    width: 100px;
+    position: absolute;
+    top: 200px;
+    left: -100px;
+}
+
+
+.bird-1 {
+    animation: bird 4s linear 2s infinite;
+}
+
+
+.bird-2 {
+    width: 50px;
+    top: 100px;
+    animation: bird 4s linear 5s infinite; 
+}
+
+.man {
+    width: 360px;
+    position: absolute;
+    bottom: 10%;
+    left: 30%;
+    z-index: 11;
+}
+
+
+.man:hover {
+    bottom: 60%;
+}
+
+
+.grass {
+    width: 110%;
+    height: 220px;
+
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    
+    animation: grass 4s linear 0s infinite;
+    animation-direction: alternate;
+}
+
+
+@keyframes fon {
+    0% {
+        background-position: left;
+    }
+
+    100% {
+        background-position: right;
+    }
+}
+
+
+@keyframes ri {
+    0% {
+        right: -140px;
+    }
+
+    100% {
+        right: 100%;
+    }
+}
+
+
+@keyframes bird {
+    0% {
+        left: -100px;
+    }
+
+    100% {
+        left: 150%;
+    }
+}
+
+
+@keyframes grass {
+    0% {
+        left: 0%;
+    }
+
+    100% {
+        left: -10%;
     }
 }
